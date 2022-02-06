@@ -1,0 +1,177 @@
+ //覆盖一些element-ui样式
+
+ .el-breadcrumb__inner, .el-breadcrumb__inner a{
+  font-weight: 400!important;
+  color: #303945;
+}
+
+.initDrownStyle .el-dropdown-menu__item:focus, .el-dropdown-menu__item:not(.is-disabled):hover {
+  background: transparent;
+  color: #2593FC;
+}
+ .el-upload {
+   input[type="file"] {
+     display: none !important;
+   }
+ }
+
+ .el-upload__input {
+   display: none;
+ }
+
+ .cell {
+   .el-tag {
+     margin-right: 0px;
+   }
+ }
+
+ .small-padding {
+   .cell {
+     padding-left: 5px;
+     padding-right: 5px;
+   }
+ }
+
+ .fixed-width{
+  .el-button--mini{
+    padding: 7px 10px;
+    width: 60px;
+  }
+ }
+
+ .status-col {
+   .cell {
+     padding: 0 10px;
+     text-align: center;
+     .el-tag {
+       margin-right: 0px;
+     }
+   }
+ }
+
+ //暂时性解决dialog 问题 https://github.com/ElemeFE/element/issues/2461
+ .el-dialog {
+   transform: none;
+   left: 0;
+   position: relative;
+   margin: 0 auto;
+ }
+
+ .c-bm1-mwhite-dialog .el-dialog__header{
+   border-bottom: 1px solid #f5f5f5;
+   padding: 15px 20px;
+   .el-dialog__title {
+     font-size: 16px;
+   }
+ }
+
+ //文章页textarea修改样式
+ .article-textarea {
+   textarea {
+     padding-right: 40px;
+     resize: none;
+     border: none;
+     border-radius: 0px;
+     border-bottom: 1px solid #bfcbd9;
+   }
+ }
+
+ //element ui upload
+ .upload-container {
+   .el-upload {
+     width: 100%;
+     .el-upload-dragger {
+       width: 100%;
+       height: 200px;
+     }
+   }
+ }
+
+ .el-color-dropdown {
+   box-sizing: content-box;
+ }
+
+ .color-define-div .el-radio__label{
+  display: flex;
+  align-items: center;
+}
+
+// el-tabs底下的线变为1像素
+.el-tabs__nav-wrap::after{
+  height: 1px;
+}
+
+.el-table__header{
+  width: 100% !important;
+}
+.el-table__empty-block{
+  width: 100% !important;
+}
+.el-table__header th{
+  background: none;
+}
+
+.el-checkbox{
+  margin-right: 0;
+}
+
+// ui 样式调整 全局
+// 表格暂无数据的颜色，改为666
+.el-table__empty-text {
+  color: #666;
+}
+
+// el-tab的文字 改为#333
+.el-tabs__item{
+  color: #333;
+  font-weight: normal;
+}
+
+// el-switch 没选中颜色改为666
+.el-switch__label {
+  color: #666;
+  font-weight: normal;
+}
+
+.el-button{
+  font-weight: normal;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 2px; // 按钮统一改为2圆角
+}
+.el-button--medium{
+  padding: 10px 20px;
+}
+.el-button--small{
+  padding: 9px 15px;
+}
+.el-button--mini{
+  padding: 7px 15px;
+}
+.el-button--text{
+  padding-left: 0;
+  padding-right: 0;
+}
+.el-input__inner{
+  height: 36px;
+  border-radius: 2px; // 按钮统一改为2圆角
+}
+.el-input .el-input__inner{
+  border: 1px solid #ededed;
+}
+.el-input__inner:hover {
+  border-color: #c0c4cc;
+}
+.el-input__inner:focus{
+  border: 1px solid #409EFF;
+}
+.el-textarea .el-textarea__inner{
+  border: 1px solid #ededed;
+}
+// 所有form表单的label颜色改为333（原来是666）
+.el-form-item__label{
+  color: #333;
+}
+.el-dialog{
+  margin-bottom: 60px;
+}

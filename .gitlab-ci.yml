@@ -1,0 +1,10 @@
+stages:
+    - build
+
+sonar_analyze:
+    stage: build
+    only:
+       - schedules
+    script:
+       - $SONAR_PATH/sonar_root-admin-fe.sh
+    #when: manual
